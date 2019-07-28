@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503703BF22EE2DD400212655 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 503703BD22EE2DD400212655 /* cars.json */; };
+		503703C022EE2DD400212655 /* pictures in Resources */ = {isa = PBXBuildFile; fileRef = 503703BE22EE2DD400212655 /* pictures */; };
+		503703C222EE375200212655 /* CarListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703C122EE375200212655 /* CarListViewControllerTests.swift */; };
+		503703C622EE3B0500212655 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703C422EE3B0500212655 /* CarDetailViewController.swift */; };
+		503703C722EE3B0500212655 /* CarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503703C522EE3B0500212655 /* CarDetailViewController.xib */; };
+		5064EAB422E79ECD006C7DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EAB322E79ECD006C7DB1 /* AppDelegate.swift */; };
+		5064EABB22E79ED1006C7DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5064EABA22E79ED1006C7DB1 /* Assets.xcassets */; };
+		5064EABE22E79ED1006C7DB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064EABC22E79ED1006C7DB1 /* LaunchScreen.storyboard */; };
+		5064EAD422E79ED2006C7DB1 /* DrivyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EAD322E79ED2006C7DB1 /* DrivyUITests.swift */; };
+		5064EB3522EB451C006C7DB1 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB3322EB451C006C7DB1 /* CarListViewController.swift */; };
+		5064EB3622EB451C006C7DB1 /* CarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB3422EB451C006C7DB1 /* CarListViewController.xib */; };
+		5064EB4022EB4573006C7DB1 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB3F22EB4573006C7DB1 /* CarListViewModel.swift */; };
+		5064EB4222EB4640006C7DB1 /* CarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB4122EB4640006C7DB1 /* CarsModel.swift */; };
+		5064EB4622EB4690006C7DB1 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB4422EB4690006C7DB1 /* CarTableViewCell.swift */; };
+		5064EB4722EB4690006C7DB1 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB4522EB4690006C7DB1 /* CarTableViewCell.xib */; };
+		5064EB8522EB7562006C7DB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB8222EB7562006C7DB1 /* Constants.swift */; };
+		5064EB8622EB7562006C7DB1 /* FontPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB8322EB7562006C7DB1 /* FontPalette.swift */; };
+		5064EB8722EB7562006C7DB1 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB8422EB7562006C7DB1 /* ColorPalette.swift */; };
+		5064EB8A22EB76B8006C7DB1 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB8822EB76B8006C7DB1 /* APIConfiguration.swift */; };
+		5064EB8B22EB76B8006C7DB1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB8922EB76B8006C7DB1 /* APIService.swift */; };
+		5064EB8D22EC2972006C7DB1 /* UIVIewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB8C22EC2972006C7DB1 /* UIVIewController+Alert.swift */; };
+		5064EB9122EC2D08006C7DB1 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB9022EC2D08006C7DB1 /* StarsView.swift */; };
+		5064EB9322EC2D13006C7DB1 /* StarsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB9222EC2D13006C7DB1 /* StarsView.xib */; };
+		5064EB9522EC2E54006C7DB1 /* UIView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB9422EC2E54006C7DB1 /* UIView+Designable.swift */; };
+		5064EB9722EC4CA3006C7DB1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB9622EC4CA3006C7DB1 /* Default-568h@2x.png */; };
+		5064EB9C22EC4D0C006C7DB1 /* HeroLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB9922EC4D0B006C7DB1 /* HeroLight-Regular.ttf */; };
+		5064EB9D22EC4D0C006C7DB1 /* HeroLight-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB9A22EC4D0C006C7DB1 /* HeroLight-Bold.ttf */; };
+		5064EB9E22EC4D0C006C7DB1 /* HeroLight-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5064EB9B22EC4D0C006C7DB1 /* HeroLight-Light.ttf */; };
+		5064EBA022EE0F4A006C7DB1 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EB9F22EE0F4A006C7DB1 /* Double+.swift */; };
+		5064EBA222EE0F70006C7DB1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EBA122EE0F70006C7DB1 /* Utilities.swift */; };
+		5064EBA422EE20D4006C7DB1 /* CarListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EBA322EE20D3006C7DB1 /* CarListViewModelTests.swift */; };
+		77C6564864C0240E50C4B364 /* Pods_Drivy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8408644F05E89F87A1F4213E /* Pods_Drivy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5064EAC522E79ED2006C7DB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5064EAA822E79ECD006C7DB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5064EAAF22E79ECD006C7DB1;
+			remoteInfo = Drivy;
+		};
+		5064EAD022E79ED2006C7DB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5064EAA822E79ECD006C7DB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5064EAAF22E79ECD006C7DB1;
+			remoteInfo = Drivy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		503703BD22EE2DD400212655 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cars.json; path = api/cars.json; sourceTree = SOURCE_ROOT; };
+		503703BE22EE2DD400212655 /* pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pictures; path = api/pictures; sourceTree = SOURCE_ROOT; };
+		503703C122EE375200212655 /* CarListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewControllerTests.swift; sourceTree = "<group>"; };
+		503703C422EE3B0500212655 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		503703C522EE3B0500212655 /* CarDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailViewController.xib; sourceTree = "<group>"; };
+		5064EAB022E79ECD006C7DB1 /* Drivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5064EAB322E79ECD006C7DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5064EABA22E79ED1006C7DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5064EABD22E79ED1006C7DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5064EABF22E79ED1006C7DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5064EAC422E79ED2006C7DB1 /* DrivyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrivyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5064EACA22E79ED2006C7DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5064EACF22E79ED2006C7DB1 /* DrivyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrivyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5064EAD322E79ED2006C7DB1 /* DrivyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivyUITests.swift; sourceTree = "<group>"; };
+		5064EAD522E79ED2006C7DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5064EB3322EB451C006C7DB1 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		5064EB3422EB451C006C7DB1 /* CarListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListViewController.xib; sourceTree = "<group>"; };
+		5064EB3F22EB4573006C7DB1 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		5064EB4122EB4640006C7DB1 /* CarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsModel.swift; sourceTree = "<group>"; };
+		5064EB4422EB4690006C7DB1 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		5064EB4522EB4690006C7DB1 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		5064EB8222EB7562006C7DB1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5064EB8322EB7562006C7DB1 /* FontPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPalette.swift; sourceTree = "<group>"; };
+		5064EB8422EB7562006C7DB1 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		5064EB8822EB76B8006C7DB1 /* APIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		5064EB8922EB76B8006C7DB1 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		5064EB8C22EC2972006C7DB1 /* UIVIewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Alert.swift"; sourceTree = "<group>"; };
+		5064EB9022EC2D08006C7DB1 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		5064EB9222EC2D13006C7DB1 /* StarsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarsView.xib; sourceTree = "<group>"; };
+		5064EB9422EC2E54006C7DB1 /* UIView+Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Designable.swift"; sourceTree = "<group>"; };
+		5064EB9622EC4CA3006C7DB1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5064EB9922EC4D0B006C7DB1 /* HeroLight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HeroLight-Regular.ttf"; path = "Drivy/Fonts/HeroLight-Regular.ttf"; sourceTree = "<group>"; };
+		5064EB9A22EC4D0C006C7DB1 /* HeroLight-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HeroLight-Bold.ttf"; path = "Drivy/Fonts/HeroLight-Bold.ttf"; sourceTree = "<group>"; };
+		5064EB9B22EC4D0C006C7DB1 /* HeroLight-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HeroLight-Light.ttf"; path = "Drivy/Fonts/HeroLight-Light.ttf"; sourceTree = "<group>"; };
+		5064EB9F22EE0F4A006C7DB1 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		5064EBA122EE0F70006C7DB1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5064EBA322EE20D3006C7DB1 /* CarListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModelTests.swift; sourceTree = "<group>"; };
+		55EEFF0B6191D546BCFDD44D /* Pods-Drivy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drivy.debug.xcconfig"; path = "Target Support Files/Pods-Drivy/Pods-Drivy.debug.xcconfig"; sourceTree = "<group>"; };
+		8408644F05E89F87A1F4213E /* Pods_Drivy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drivy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		894484B2F374B9BB12B5B02B /* Pods-Drivy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drivy.release.xcconfig"; path = "Target Support Files/Pods-Drivy/Pods-Drivy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5064EAAD22E79ECD006C7DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C6564864C0240E50C4B364 /* Pods_Drivy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5064EAC122E79ED2006C7DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5064EACC22E79ED2006C7DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		503703BC22EE2DAE00212655 /* MockApi */ = {
+			isa = PBXGroup;
+			children = (
+				503703BD22EE2DD400212655 /* cars.json */,
+				503703BE22EE2DD400212655 /* pictures */,
+			);
+			path = MockApi;
+			sourceTree = "<group>";
+		};
+		503703C322EE3AD500212655 /* CarDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				503703C422EE3B0500212655 /* CarDetailViewController.swift */,
+				503703C522EE3B0500212655 /* CarDetailViewController.xib */,
+			);
+			path = CarDetailViewController;
+			sourceTree = "<group>";
+		};
+		5064EAA722E79ECD006C7DB1 = {
+			isa = PBXGroup;
+			children = (
+				503703BC22EE2DAE00212655 /* MockApi */,
+				5064EB9822EC4CFA006C7DB1 /* Fonts */,
+				5064EB9622EC4CA3006C7DB1 /* Default-568h@2x.png */,
+				5064EAB222E79ECD006C7DB1 /* Drivy */,
+				5064EAC722E79ED2006C7DB1 /* DrivyTests */,
+				5064EAD222E79ED2006C7DB1 /* DrivyUITests */,
+				5064EAB122E79ECD006C7DB1 /* Products */,
+				FFA548F20695DE4F63A60A3B /* Pods */,
+				E7B0EED3E02EC9EA426E8EB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5064EAB122E79ECD006C7DB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5064EAB022E79ECD006C7DB1 /* Drivy.app */,
+				5064EAC422E79ED2006C7DB1 /* DrivyTests.xctest */,
+				5064EACF22E79ED2006C7DB1 /* DrivyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5064EAB222E79ECD006C7DB1 /* Drivy */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB8E22EC2CE3006C7DB1 /* Components */,
+				5064EB3222EB44C5006C7DB1 /* Extension */,
+				5064EB3122EB44BA006C7DB1 /* Core */,
+				5064EB3022EB4484006C7DB1 /* Model */,
+				5064EB2F22EB446E006C7DB1 /* ViewModel */,
+				5064EB2E22EB4458006C7DB1 /* View */,
+				5064EAE222E7A069006C7DB1 /* Network */,
+				5064EAE122E7A05E006C7DB1 /* SupportingFIles */,
+				5064EAB322E79ECD006C7DB1 /* AppDelegate.swift */,
+				5064EABC22E79ED1006C7DB1 /* LaunchScreen.storyboard */,
+				5064EABF22E79ED1006C7DB1 /* Info.plist */,
+			);
+			path = Drivy;
+			sourceTree = "<group>";
+		};
+		5064EAC722E79ED2006C7DB1 /* DrivyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5064EBA322EE20D3006C7DB1 /* CarListViewModelTests.swift */,
+				5064EACA22E79ED2006C7DB1 /* Info.plist */,
+				503703C122EE375200212655 /* CarListViewControllerTests.swift */,
+			);
+			path = DrivyTests;
+			sourceTree = "<group>";
+		};
+		5064EAD222E79ED2006C7DB1 /* DrivyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5064EAD322E79ED2006C7DB1 /* DrivyUITests.swift */,
+				5064EAD522E79ED2006C7DB1 /* Info.plist */,
+			);
+			path = DrivyUITests;
+			sourceTree = "<group>";
+		};
+		5064EAE122E7A05E006C7DB1 /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				5064EABA22E79ED1006C7DB1 /* Assets.xcassets */,
+			);
+			path = SupportingFIles;
+			sourceTree = "<group>";
+		};
+		5064EAE222E7A069006C7DB1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB8822EB76B8006C7DB1 /* APIConfiguration.swift */,
+				5064EB8922EB76B8006C7DB1 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5064EB2E22EB4458006C7DB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				503703C322EE3AD500212655 /* CarDetailViewController */,
+				5064EB3722EB4520006C7DB1 /* CarListViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5064EB2F22EB446E006C7DB1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB3F22EB4573006C7DB1 /* CarListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5064EB3022EB4484006C7DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB4122EB4640006C7DB1 /* CarsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5064EB3122EB44BA006C7DB1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB8422EB7562006C7DB1 /* ColorPalette.swift */,
+				5064EB8222EB7562006C7DB1 /* Constants.swift */,
+				5064EB8322EB7562006C7DB1 /* FontPalette.swift */,
+				5064EBA122EE0F70006C7DB1 /* Utilities.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5064EB3222EB44C5006C7DB1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB9422EC2E54006C7DB1 /* UIView+Designable.swift */,
+				5064EB8C22EC2972006C7DB1 /* UIVIewController+Alert.swift */,
+				5064EB9F22EE0F4A006C7DB1 /* Double+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5064EB3722EB4520006C7DB1 /* CarListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB4322EB465F006C7DB1 /* CarTableViewCell */,
+				5064EB3322EB451C006C7DB1 /* CarListViewController.swift */,
+				5064EB3422EB451C006C7DB1 /* CarListViewController.xib */,
+			);
+			path = CarListViewController;
+			sourceTree = "<group>";
+		};
+		5064EB4322EB465F006C7DB1 /* CarTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB4422EB4690006C7DB1 /* CarTableViewCell.swift */,
+				5064EB4522EB4690006C7DB1 /* CarTableViewCell.xib */,
+			);
+			path = CarTableViewCell;
+			sourceTree = "<group>";
+		};
+		5064EB8E22EC2CE3006C7DB1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB8F22EC2CEA006C7DB1 /* StarsView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5064EB8F22EC2CEA006C7DB1 /* StarsView */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB9022EC2D08006C7DB1 /* StarsView.swift */,
+				5064EB9222EC2D13006C7DB1 /* StarsView.xib */,
+			);
+			path = StarsView;
+			sourceTree = "<group>";
+		};
+		5064EB9822EC4CFA006C7DB1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5064EB9A22EC4D0C006C7DB1 /* HeroLight-Bold.ttf */,
+				5064EB9B22EC4D0C006C7DB1 /* HeroLight-Light.ttf */,
+				5064EB9922EC4D0B006C7DB1 /* HeroLight-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E7B0EED3E02EC9EA426E8EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8408644F05E89F87A1F4213E /* Pods_Drivy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFA548F20695DE4F63A60A3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EEFF0B6191D546BCFDD44D /* Pods-Drivy.debug.xcconfig */,
+				894484B2F374B9BB12B5B02B /* Pods-Drivy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5064EAAF22E79ECD006C7DB1 /* Drivy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5064EAD822E79ED2006C7DB1 /* Build configuration list for PBXNativeTarget "Drivy" */;
+			buildPhases = (
+				454709F3C1D4CFA3A4D17D91 /* [CP] Check Pods Manifest.lock */,
+				5064EAAC22E79ECD006C7DB1 /* Sources */,
+				5064EAAD22E79ECD006C7DB1 /* Frameworks */,
+				5064EAAE22E79ECD006C7DB1 /* Resources */,
+				816A21DC4724936CC6BB87DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Drivy;
+			productName = Drivy;
+			productReference = 5064EAB022E79ECD006C7DB1 /* Drivy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5064EAC322E79ED2006C7DB1 /* DrivyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5064EADB22E79ED2006C7DB1 /* Build configuration list for PBXNativeTarget "DrivyTests" */;
+			buildPhases = (
+				5064EAC022E79ED2006C7DB1 /* Sources */,
+				5064EAC122E79ED2006C7DB1 /* Frameworks */,
+				5064EAC222E79ED2006C7DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5064EAC622E79ED2006C7DB1 /* PBXTargetDependency */,
+			);
+			name = DrivyTests;
+			productName = DrivyTests;
+			productReference = 5064EAC422E79ED2006C7DB1 /* DrivyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5064EACE22E79ED2006C7DB1 /* DrivyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5064EADE22E79ED2006C7DB1 /* Build configuration list for PBXNativeTarget "DrivyUITests" */;
+			buildPhases = (
+				5064EACB22E79ED2006C7DB1 /* Sources */,
+				5064EACC22E79ED2006C7DB1 /* Frameworks */,
+				5064EACD22E79ED2006C7DB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5064EAD122E79ED2006C7DB1 /* PBXTargetDependency */,
+			);
+			name = DrivyUITests;
+			productName = DrivyUITests;
+			productReference = 5064EACF22E79ED2006C7DB1 /* DrivyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5064EAA822E79ECD006C7DB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = SmartSum;
+				TargetAttributes = {
+					5064EAAF22E79ECD006C7DB1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					5064EAC322E79ED2006C7DB1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5064EAAF22E79ECD006C7DB1;
+					};
+					5064EACE22E79ED2006C7DB1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5064EAAF22E79ECD006C7DB1;
+					};
+				};
+			};
+			buildConfigurationList = 5064EAAB22E79ECD006C7DB1 /* Build configuration list for PBXProject "Drivy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5064EAA722E79ECD006C7DB1;
+			productRefGroup = 5064EAB122E79ECD006C7DB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5064EAAF22E79ECD006C7DB1 /* Drivy */,
+				5064EAC322E79ED2006C7DB1 /* DrivyTests */,
+				5064EACE22E79ED2006C7DB1 /* DrivyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5064EAAE22E79ECD006C7DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503703C722EE3B0500212655 /* CarDetailViewController.xib in Resources */,
+				5064EB9322EC2D13006C7DB1 /* StarsView.xib in Resources */,
+				5064EB3622EB451C006C7DB1 /* CarListViewController.xib in Resources */,
+				503703BF22EE2DD400212655 /* cars.json in Resources */,
+				503703C022EE2DD400212655 /* pictures in Resources */,
+				5064EB9D22EC4D0C006C7DB1 /* HeroLight-Bold.ttf in Resources */,
+				5064EB9C22EC4D0C006C7DB1 /* HeroLight-Regular.ttf in Resources */,
+				5064EB9E22EC4D0C006C7DB1 /* HeroLight-Light.ttf in Resources */,
+				5064EB4722EB4690006C7DB1 /* CarTableViewCell.xib in Resources */,
+				5064EABE22E79ED1006C7DB1 /* LaunchScreen.storyboard in Resources */,
+				5064EABB22E79ED1006C7DB1 /* Assets.xcassets in Resources */,
+				5064EB9722EC4CA3006C7DB1 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5064EAC222E79ED2006C7DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5064EACD22E79ED2006C7DB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		454709F3C1D4CFA3A4D17D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drivy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816A21DC4724936CC6BB87DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Drivy/Pods-Drivy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Drivy/Pods-Drivy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5064EAAC22E79ECD006C7DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503703C622EE3B0500212655 /* CarDetailViewController.swift in Sources */,
+				5064EB8D22EC2972006C7DB1 /* UIVIewController+Alert.swift in Sources */,
+				5064EB4222EB4640006C7DB1 /* CarsModel.swift in Sources */,
+				5064EB4622EB4690006C7DB1 /* CarTableViewCell.swift in Sources */,
+				5064EBA222EE0F70006C7DB1 /* Utilities.swift in Sources */,
+				5064EB4022EB4573006C7DB1 /* CarListViewModel.swift in Sources */,
+				5064EB8622EB7562006C7DB1 /* FontPalette.swift in Sources */,
+				5064EB8A22EB76B8006C7DB1 /* APIConfiguration.swift in Sources */,
+				5064EB8722EB7562006C7DB1 /* ColorPalette.swift in Sources */,
+				5064EB8B22EB76B8006C7DB1 /* APIService.swift in Sources */,
+				5064EBA022EE0F4A006C7DB1 /* Double+.swift in Sources */,
+				5064EAB422E79ECD006C7DB1 /* AppDelegate.swift in Sources */,
+				5064EB3522EB451C006C7DB1 /* CarListViewController.swift in Sources */,
+				5064EB9122EC2D08006C7DB1 /* StarsView.swift in Sources */,
+				5064EB9522EC2E54006C7DB1 /* UIView+Designable.swift in Sources */,
+				5064EB8522EB7562006C7DB1 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5064EAC022E79ED2006C7DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503703C222EE375200212655 /* CarListViewControllerTests.swift in Sources */,
+				5064EBA422EE20D4006C7DB1 /* CarListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5064EACB22E79ED2006C7DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5064EAD422E79ED2006C7DB1 /* DrivyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5064EAC622E79ED2006C7DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5064EAAF22E79ECD006C7DB1 /* Drivy */;
+			targetProxy = 5064EAC522E79ED2006C7DB1 /* PBXContainerItemProxy */;
+		};
+		5064EAD122E79ED2006C7DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5064EAAF22E79ECD006C7DB1 /* Drivy */;
+			targetProxy = 5064EAD022E79ED2006C7DB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5064EABC22E79ED1006C7DB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5064EABD22E79ED1006C7DB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5064EAD622E79ED2006C7DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5064EAD722E79ED2006C7DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5064EAD922E79ED2006C7DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EEFF0B6191D546BCFDD44D /* Pods-Drivy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HCC2PXLQB;
+				INFOPLIST_FILE = Drivy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartSum.Drivy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5064EADA22E79ED2006C7DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894484B2F374B9BB12B5B02B /* Pods-Drivy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HCC2PXLQB;
+				INFOPLIST_FILE = Drivy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartSum.Drivy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5064EADC22E79ED2006C7DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HCC2PXLQB;
+				INFOPLIST_FILE = DrivyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartSum.DrivyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drivy.app/Drivy";
+			};
+			name = Debug;
+		};
+		5064EADD22E79ED2006C7DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HCC2PXLQB;
+				INFOPLIST_FILE = DrivyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartSum.DrivyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drivy.app/Drivy";
+			};
+			name = Release;
+		};
+		5064EADF22E79ED2006C7DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HCC2PXLQB;
+				INFOPLIST_FILE = DrivyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartSum.DrivyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drivy;
+			};
+			name = Debug;
+		};
+		5064EAE022E79ED2006C7DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HCC2PXLQB;
+				INFOPLIST_FILE = DrivyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartSum.DrivyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drivy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5064EAAB22E79ECD006C7DB1 /* Build configuration list for PBXProject "Drivy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5064EAD622E79ED2006C7DB1 /* Debug */,
+				5064EAD722E79ED2006C7DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5064EAD822E79ED2006C7DB1 /* Build configuration list for PBXNativeTarget "Drivy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5064EAD922E79ED2006C7DB1 /* Debug */,
+				5064EADA22E79ED2006C7DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5064EADB22E79ED2006C7DB1 /* Build configuration list for PBXNativeTarget "DrivyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5064EADC22E79ED2006C7DB1 /* Debug */,
+				5064EADD22E79ED2006C7DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5064EADE22E79ED2006C7DB1 /* Build configuration list for PBXNativeTarget "DrivyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5064EADF22E79ED2006C7DB1 /* Debug */,
+				5064EAE022E79ED2006C7DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5064EAA822E79ECD006C7DB1 /* Project object */;
+}

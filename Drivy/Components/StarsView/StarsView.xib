@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarsView" customModule="Drivy" customModuleProvider="target">
+            <connections>
+                <outlet property="fifthStarImageView" destination="ZH0-4d-4Ur" id="PDR-ES-9aE"/>
+                <outlet property="firstStarImageView" destination="Jka-Ac-uuB" id="OsS-Tp-ZEH"/>
+                <outlet property="fourthStarImageView" destination="rah-5W-6hB" id="pxm-FH-xI7"/>
+                <outlet property="ratingCountLabel" destination="Zfd-Gp-ejF" id="uKZ-kA-baM"/>
+                <outlet property="secondStarImageView" destination="VB1-o0-mhf" id="ufI-ff-LB9"/>
+                <outlet property="thirdStarImageView" destination="NRs-ph-nrq" id="um2-wW-g5Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="159"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cEq-BZ-KDf">
+                    <rect key="frame" x="0.0" y="0.0" width="290.5" height="159"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullStar" translatesAutoresizingMaskIntoConstraints="NO" id="Jka-Ac-uuB">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="159"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullStar" translatesAutoresizingMaskIntoConstraints="NO" id="VB1-o0-mhf">
+                            <rect key="frame" x="59" y="0.0" width="55" height="159"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullStar" translatesAutoresizingMaskIntoConstraints="NO" id="NRs-ph-nrq">
+                            <rect key="frame" x="118" y="0.0" width="54.5" height="159"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halfStar" translatesAutoresizingMaskIntoConstraints="NO" id="rah-5W-6hB">
+                            <rect key="frame" x="176.5" y="0.0" width="55" height="159"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyStar" translatesAutoresizingMaskIntoConstraints="NO" id="ZH0-4d-4Ur">
+                            <rect key="frame" x="235.5" y="0.0" width="55" height="159"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfd-Gp-ejF">
+                    <rect key="frame" x="298.5" y="53.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cEq-BZ-KDf" secondAttribute="bottom" id="NCX-az-nC1"/>
+                <constraint firstItem="cEq-BZ-KDf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WJW-DP-Say"/>
+                <constraint firstItem="Zfd-Gp-ejF" firstAttribute="leading" secondItem="ZH0-4d-4Ur" secondAttribute="trailing" constant="8" id="bnX-vI-a1n"/>
+                <constraint firstItem="cEq-BZ-KDf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="raW-7T-shc"/>
+                <constraint firstItem="cEq-BZ-KDf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="vGw-n3-Wxd"/>
+                <constraint firstItem="Zfd-Gp-ejF" firstAttribute="centerY" secondItem="ZH0-4d-4Ur" secondAttribute="centerY" multiplier="0.8" id="zYz-Oa-8Le"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="100.72463768115942" y="-164.39732142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emptyStar" width="40" height="38"/>
+        <image name="fullStar" width="40" height="38"/>
+        <image name="halfStar" width="40" height="38"/>
+    </resources>
+</document>
