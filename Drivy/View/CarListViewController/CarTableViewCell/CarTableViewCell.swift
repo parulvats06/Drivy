@@ -53,12 +53,24 @@ class CarTableViewCell: UITableViewCell {
         starView.configure(rating: model.rating)
     }
     
+    func configure(modelItem: CarDetailViewModeltem) {
+        guard let model = modelItem as? CarViewModelBasicInfoItem else {
+            return
+        }
+        carImageView.sd_setImage(with: URL( string: model.carImageUrl), completed: nil)
+        pricePerDayLabel.text = pricePerDayText(model.pricePerDay)
+        
+        brandNameLabel.text = model.brandName
+        brandNameLabel.font = Fonts.condensed(.xLarge)
+        starView.configure(rating: model.rating)
+    }
+    
     fileprivate func pricePerDayText(_ price: Double) -> String {
         // add currency conversion
         guard let symbol = Utilities.getSymbolForCurrencyCode(code: Constants.Defaults.currencyCode) else {
             return ""
         }
-        return symbol + " " + price.decimalFormatter(countryCode: Constants.Defaults.country) + "\n per day"
+        return price.decimalFormatter(countryCode: Constants.Defaults.country) + symbol + "\n per day"
     }
 }
 

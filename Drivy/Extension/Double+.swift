@@ -13,7 +13,7 @@ extension Double {
     func decimalFormatter(countryCode: String) -> String {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: countryCode)
-        formatter.minimumFractionDigits = 2
+        formatter.minimumFractionDigits = Constants.Defaults.minimumPriceFractionDigits
         formatter.maximumFractionDigits = 2
         formatter.numberStyle = NumberFormatter.Style.decimal
         formatter.usesGroupingSeparator = true

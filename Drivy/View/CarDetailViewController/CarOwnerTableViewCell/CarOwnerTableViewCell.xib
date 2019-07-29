@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarOwnerCellIdentifier" rowHeight="117" id="KGk-i7-Jjw" customClass="CarOwnerTableViewCell" customModule="Drivy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Kh-DS-HdG">
+                        <rect key="frame" x="16" y="43" width="57.5" height="57.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7Kh-DS-HdG" secondAttribute="height" multiplier="1:1" id="fpd-aW-qly"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huA-Mt-Wzz">
+                        <rect key="frame" x="16" y="16" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0t-Qw-qFQ">
+                        <rect key="frame" x="97.5" y="51" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9J-OB-Omd" customClass="StarsView" customModule="Drivy" customModuleProvider="target">
+                        <rect key="frame" x="97.5" y="74" width="197.5" height="29"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="xxB-V6-HCv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Kh-DS-HdG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ciq-57-URa"/>
+                    <constraint firstItem="o9J-OB-Omd" firstAttribute="leading" secondItem="7Kh-DS-HdG" secondAttribute="trailing" constant="24" id="KSk-36-Hob"/>
+                    <constraint firstItem="o9J-OB-Omd" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="UcW-nQ-a4v"/>
+                    <constraint firstItem="o9J-OB-Omd" firstAttribute="bottom" secondItem="7Kh-DS-HdG" secondAttribute="bottom" constant="-8" id="aZl-TI-vQo"/>
+                    <constraint firstItem="s0t-Qw-qFQ" firstAttribute="top" secondItem="7Kh-DS-HdG" secondAttribute="top" constant="8" id="jqq-tj-LgA"/>
+                    <constraint firstItem="7Kh-DS-HdG" firstAttribute="top" secondItem="huA-Mt-Wzz" secondAttribute="bottom" constant="16" id="m2Z-1G-jEX"/>
+                    <constraint firstAttribute="bottom" secondItem="7Kh-DS-HdG" secondAttribute="bottom" constant="8" id="pM9-tQ-ewQ"/>
+                    <constraint firstItem="huA-Mt-Wzz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="pYd-fB-wgD"/>
+                    <constraint firstItem="huA-Mt-Wzz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uGZ-d1-A5t"/>
+                    <constraint firstItem="s0t-Qw-qFQ" firstAttribute="leading" secondItem="7Kh-DS-HdG" secondAttribute="trailing" constant="24" id="x54-xm-rG8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ownerHeaderLabel" destination="huA-Mt-Wzz" id="dxo-Rr-LQE"/>
+                <outlet property="ownerImageView" destination="7Kh-DS-HdG" id="B1c-yn-r1Q"/>
+                <outlet property="ownerNameLabel" destination="s0t-Qw-qFQ" id="Qu6-lF-9eC"/>
+                <outlet property="starsView" destination="o9J-OB-Omd" id="Mgm-Wb-ihQ"/>
+            </connections>
+            <point key="canvasLocation" x="144.20289855072465" y="106.80803571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

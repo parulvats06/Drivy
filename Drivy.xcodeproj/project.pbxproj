@@ -12,6 +12,11 @@
 		503703C222EE375200212655 /* CarListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703C122EE375200212655 /* CarListViewControllerTests.swift */; };
 		503703C622EE3B0500212655 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703C422EE3B0500212655 /* CarDetailViewController.swift */; };
 		503703C722EE3B0500212655 /* CarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503703C522EE3B0500212655 /* CarDetailViewController.xib */; };
+		503703D022EEFB1500212655 /* CarOwnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703CE22EEFB1500212655 /* CarOwnerTableViewCell.swift */; };
+		503703D122EEFB1500212655 /* CarOwnerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503703CF22EEFB1500212655 /* CarOwnerTableViewCell.xib */; };
+		503703D322EF12E800212655 /* CarDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703D222EF12E700212655 /* CarDetailViewModel.swift */; };
+		503703D522EF131D00212655 /* CarDetailViewModeltem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703D422EF131D00212655 /* CarDetailViewModeltem.swift */; };
+		503703D922EF253500212655 /* CarDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503703D822EF253500212655 /* CarDetailViewControllerTests.swift */; };
 		5064EAB422E79ECD006C7DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064EAB322E79ECD006C7DB1 /* AppDelegate.swift */; };
 		5064EABB22E79ED1006C7DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5064EABA22E79ED1006C7DB1 /* Assets.xcassets */; };
 		5064EABE22E79ED1006C7DB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064EABC22E79ED1006C7DB1 /* LaunchScreen.storyboard */; };
@@ -64,6 +69,11 @@
 		503703C122EE375200212655 /* CarListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewControllerTests.swift; sourceTree = "<group>"; };
 		503703C422EE3B0500212655 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
 		503703C522EE3B0500212655 /* CarDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDetailViewController.xib; sourceTree = "<group>"; };
+		503703CE22EEFB1500212655 /* CarOwnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOwnerTableViewCell.swift; sourceTree = "<group>"; };
+		503703CF22EEFB1500212655 /* CarOwnerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarOwnerTableViewCell.xib; sourceTree = "<group>"; };
+		503703D222EF12E700212655 /* CarDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModel.swift; sourceTree = "<group>"; };
+		503703D422EF131D00212655 /* CarDetailViewModeltem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModeltem.swift; sourceTree = "<group>"; };
+		503703D822EF253500212655 /* CarDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		5064EAB022E79ECD006C7DB1 /* Drivy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drivy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5064EAB322E79ECD006C7DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5064EABA22E79ED1006C7DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,10 +149,20 @@
 		503703C322EE3AD500212655 /* CarDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				503703CD22EEFAF800212655 /* CarOwnerTableViewCell */,
 				503703C422EE3B0500212655 /* CarDetailViewController.swift */,
 				503703C522EE3B0500212655 /* CarDetailViewController.xib */,
 			);
 			path = CarDetailViewController;
+			sourceTree = "<group>";
+		};
+		503703CD22EEFAF800212655 /* CarOwnerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				503703CE22EEFB1500212655 /* CarOwnerTableViewCell.swift */,
+				503703CF22EEFB1500212655 /* CarOwnerTableViewCell.xib */,
+			);
+			path = CarOwnerTableViewCell;
 			sourceTree = "<group>";
 		};
 		5064EAA722E79ECD006C7DB1 = {
@@ -194,6 +214,7 @@
 				5064EBA322EE20D3006C7DB1 /* CarListViewModelTests.swift */,
 				5064EACA22E79ED2006C7DB1 /* Info.plist */,
 				503703C122EE375200212655 /* CarListViewControllerTests.swift */,
+				503703D822EF253500212655 /* CarDetailViewControllerTests.swift */,
 			);
 			path = DrivyTests;
 			sourceTree = "<group>";
@@ -237,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				5064EB3F22EB4573006C7DB1 /* CarListViewModel.swift */,
+				503703D222EF12E700212655 /* CarDetailViewModel.swift */,
+				503703D422EF131D00212655 /* CarDetailViewModeltem.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -447,6 +470,7 @@
 				5064EB9D22EC4D0C006C7DB1 /* HeroLight-Bold.ttf in Resources */,
 				5064EB9C22EC4D0C006C7DB1 /* HeroLight-Regular.ttf in Resources */,
 				5064EB9E22EC4D0C006C7DB1 /* HeroLight-Light.ttf in Resources */,
+				503703D122EEFB1500212655 /* CarOwnerTableViewCell.xib in Resources */,
 				5064EB4722EB4690006C7DB1 /* CarTableViewCell.xib in Resources */,
 				5064EABE22E79ED1006C7DB1 /* LaunchScreen.storyboard in Resources */,
 				5064EABB22E79ED1006C7DB1 /* Assets.xcassets in Resources */,
@@ -530,6 +554,8 @@
 				5064EB4622EB4690006C7DB1 /* CarTableViewCell.swift in Sources */,
 				5064EBA222EE0F70006C7DB1 /* Utilities.swift in Sources */,
 				5064EB4022EB4573006C7DB1 /* CarListViewModel.swift in Sources */,
+				503703D322EF12E800212655 /* CarDetailViewModel.swift in Sources */,
+				503703D022EEFB1500212655 /* CarOwnerTableViewCell.swift in Sources */,
 				5064EB8622EB7562006C7DB1 /* FontPalette.swift in Sources */,
 				5064EB8A22EB76B8006C7DB1 /* APIConfiguration.swift in Sources */,
 				5064EB8722EB7562006C7DB1 /* ColorPalette.swift in Sources */,
@@ -538,6 +564,7 @@
 				5064EAB422E79ECD006C7DB1 /* AppDelegate.swift in Sources */,
 				5064EB3522EB451C006C7DB1 /* CarListViewController.swift in Sources */,
 				5064EB9122EC2D08006C7DB1 /* StarsView.swift in Sources */,
+				503703D522EF131D00212655 /* CarDetailViewModeltem.swift in Sources */,
 				5064EB9522EC2E54006C7DB1 /* UIView+Designable.swift in Sources */,
 				5064EB8522EB7562006C7DB1 /* Constants.swift in Sources */,
 			);
@@ -547,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503703D922EF253500212655 /* CarDetailViewControllerTests.swift in Sources */,
 				503703C222EE375200212655 /* CarListViewControllerTests.swift in Sources */,
 				5064EBA422EE20D4006C7DB1 /* CarListViewModelTests.swift in Sources */,
 			);

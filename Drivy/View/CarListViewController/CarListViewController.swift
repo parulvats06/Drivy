@@ -24,7 +24,6 @@ class CarListViewController: UIViewController {
             carsTableView.separatorStyle = .none
             carsTableView.dataSource = self
             carsTableView.delegate = self
-            carsTableView.reloadData()
         }
     }
     
@@ -87,6 +86,7 @@ extension CarListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 24.0
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.carCellIdentifier, for: indexPath) as? CarTableViewCell else {
             fatalError("Cell does not exists")

@@ -12,16 +12,19 @@ struct Constants {
     
     struct CellIdentifiers {
         static let carCellIdentifier = "CarCellIdentifier"
+        static let carOwnerCellIdentifier = "CarOwnerCellIdentifier"
     }
     
     struct NibIdentifiers {
         static let carTableViewCell = "CarTableViewCell"
+        static let carOwnerTableViewCell = "CarOwnerTableViewCell"
     }
     
     struct Defaults {
         static let baseUrl = "https://raw.githubusercontent.com/drivy/jobs/master/android/api/"
         static let country = "nl"
         static let currencyCode = "EUR"
+        static let minimumPriceFractionDigits = 0
     }
     
     enum HTTPHeaderField: String {
